@@ -4,203 +4,412 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Razakhan | Cybersecurity Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Google Font (Professional, clean) -->
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== HERO SECTION ===== -->
-  <header class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Razakhan</h1>
-      <h2>Cybersecurity Student | Security Fundamentals</h2>
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>RK<span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-      <p>
-        Cybersecurity student building a strong foundation in networking, Linux,
-        and security fundamentals through hands-on labs and structured learning.
-        Focused on developing practical, entry-level security skills.
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="home">
+
+    <!-- Decorative background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="container hero-container">
+
+      <!-- Status badge -->
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line">Razakhan</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-tag">Cybersecurity Student</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag dim">Security Fundamentals</span>
+      </div>
+
+      <p class="hero-desc">
+        Building a strong foundation in networking, Linux, and security fundamentals
+        through hands-on labs. Focused on developing practical, entry-level security skills.
       </p>
 
-      <div class="hero-links">
-        <a href="#contact" class="btn">Get in Touch</a>
-        <a href="resume/Razakhan_Cybersecurity_Resume.pdf" class="btn secondary">
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="resume/Razakhan_Cybersecurity_Resume.pdf" class="btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
           View Resume
         </a>
       </div>
+
+      <!-- Floating stat widgets -->
+      <div class="hero-widgets">
+        <div class="widget">
+          <div class="widget-icon">🛡️</div>
+          <div class="widget-info">
+            <span class="widget-num">100+</span>
+            <span class="widget-label">THM Points</span>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget-icon">📚</div>
+          <div class="widget-info">
+            <span class="widget-num">4+</span>
+            <span class="widget-label">Paths Active</span>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget-icon">⚡</div>
+          <div class="widget-info">
+            <span class="widget-num">2026</span>
+            <span class="widget-label">Currently Active</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </header>
 
 
   <!-- ===== ABOUT ===== -->
   <section class="section" id="about">
     <div class="container">
-    <div class="section-box">
-      <h3>About Me</h3>
-      <p>
-  I am a cybersecurity student focused on building core defensive security
-  and networking skills. My learning emphasizes understanding how systems
-  work before attempting to secure or test them.
-</p>
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2>Who I Am</h2>
+      </div>
 
-<p>
-  I regularly practice using hands-on labs and guided environments to
-  strengthen my understanding of Linux, networking concepts, and basic
-  security tools.
-</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a cybersecurity student focused on building core defensive security
+            and networking skills. My learning emphasizes understanding how systems
+            work before attempting to secure or test them.
+          </p>
+          <p>
+            I regularly practice using hands-on labs and guided environments to
+            strengthen my understanding of Linux, networking concepts, and basic
+            security tools.
+          </p>
 
+          <!-- Focus areas pills -->
+          <div class="focus-pills">
+            <span class="pill">Defensive Security</span>
+            <span class="pill">Network Analysis</span>
+            <span class="pill">Linux Systems</span>
+            <span class="pill">Ethical Learning</span>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="card-decoration"></div>
+          <div class="about-card-inner">
+            <div class="info-row">
+              <span class="info-label">Status</span>
+              <span class="info-value active-val">● Active Learner</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Focus</span>
+              <span class="info-value">Cybersecurity</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Platform</span>
+              <span class="info-value">TryHackMe</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Goal</span>
+              <span class="info-value">Entry-Level Role</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Email</span>
+              <span class="info-value">Razakhan07@proton.me</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
   <!-- ===== SKILLS ===== -->
-  <section class="section gray" id="skills">
+  <section class="section section-dark" id="skills">
     <div class="container">
-      <h3>Skills</h3>
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2>What I Know</h2>
+      </div>
 
       <div class="skills-grid">
-        <div class="skill-box">
-          <h4>Cybersecurity Fundamentals</h4>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Cybersecurity Fundamentals</h4>
+          </div>
           <ul>
             <li>Security Principles (CIA Triad)</li>
-            <li>Threats, Vulnerabilities, and Risk</li>
-            <li>Common Web & Network Attack Concepts</li>
+            <li>Threats, Vulnerabilities & Risk</li>
+            <li>Web & Network Attack Concepts</li>
             <li>Security Awareness</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w:55%"></div>
+          </div>
         </div>
 
-        <div class="skill-box">
-          <h4>Networking</h4>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h4>Networking</h4>
+          </div>
           <ul>
             <li>OSI & TCP/IP Models</li>
             <li>IP Addressing & Subnetting</li>
             <li>DNS, HTTP/HTTPS</li>
             <li>Basic Routing & Switching</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w:50%"></div>
+          </div>
         </div>
 
-        <div class="skill-box">
-          <h4>Tools & Platforms</h4>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <h4>Tools & Platforms</h4>
+          </div>
           <ul>
             <li>Linux (Command Line)</li>
-            <li>Nmap (Basic Scanning & Enumeration)</li>
-            <li>Wireshark (Traffic Analysis Basics)</li>
+            <li>Nmap (Scanning & Enumeration)</li>
+            <li>Wireshark (Traffic Analysis)</li>
             <li>TryHackMe Labs</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w:45%"></div>
+          </div>
         </div>
 
-        <div class="skill-box">
-          <h4>Programming & Scripting</h4>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h4>Programming & Scripting</h4>
+          </div>
           <ul>
             <li>Python (Fundamentals)</li>
-            <li>Bash (Command-line Scripting Basics)</li>
-            <li>HTML & CSS (This Site)</li>
+            <li>Bash (Scripting Basics)</li>
+            <li>HTML & CSS</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w:40%"></div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS / LABS ===== -->
+
+  <!-- ===== PROJECTS ===== -->
   <section class="section" id="projects">
     <div class="container">
-    <div class="section-box">
-      <h3>Projects & Labs</h3>
-
-      <div class="project">
-        <h4>TryHackMe – Hands-on Security Labs</h4>
-        <p>
-  Practiced foundational cybersecurity concepts through guided and
-  challenge-based labs, including Linux fundamentals, networking basics,
-  web security concepts, and defensive security principles.
-</p>
-
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2>What I've Built</h2>
       </div>
 
-      <div class="project">
-        <h4>Personal Portfolio Website</h4>
-        <p>
-          Designed and built a responsive portfolio website using HTML, CSS, and
-          JavaScript to present skills, learning progress, and professional profile.
-        </p>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Featured</div>
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://tryhackme.com" target="_blank" rel="noopener" title="Visit TryHackMe" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4>TryHackMe – Hands-on Security Labs</h4>
+          <p>Practiced foundational cybersecurity concepts through guided labs — covering Linux fundamentals, networking basics, web security, and defensive security principles.</p>
+          <div class="project-tags">
+            <span>Linux</span>
+            <span>Networking</span>
+            <span>Web Security</span>
+            <span>Defensive</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Razakhan-sec" target="_blank" rel="noopener" class="icon-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4>Personal Portfolio Website</h4>
+          <p>Designed and built a fully responsive portfolio website using HTML, CSS, and JavaScript to present skills, learning progress, and professional profile.</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- ===== CERTIFICATIONS ===== -->
-  <section class="section gray" id="certifications">
+  <section class="section section-dark" id="certifications">
     <div class="container">
-      <div class="section-box">
-      <h3>Certifications & Learning</h3>
-      <ul class="cert-list">
-  <li>ISC2 Certified in Cybersecurity (CC) – Currently Preparing</li>
-  <li>Cisco Networking Fundamentals – Learning in Progress</li>
-  <li>TryHackMe – Pre Security & Beginner Learning Paths</li>
-  <li>FreeCodeCamp – Programming & Web Fundamentals</li>
-</ul>
+      <div class="section-header">
+        <span class="section-tag">04 — Certifications</span>
+        <h2>Credentials & Learning</h2>
+      </div>
 
+      <div class="certs-grid">
+
+        <div class="cert-card in-progress">
+          <div class="cert-status-pill">In Progress</div>
+          <div class="cert-logo">ISC²</div>
+          <h4>Certified in Cybersecurity (CC)</h4>
+          <p>Currently preparing for entry-level certification covering security principles, risk management, and network security.</p>
+        </div>
+
+        <div class="cert-card in-progress">
+          <div class="cert-status-pill">In Progress</div>
+          <div class="cert-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h4>Cisco Networking Fundamentals</h4>
+          <p>Building understanding of core networking concepts, protocols, and infrastructure.</p>
+        </div>
+
+        <div class="cert-card completed">
+          <div class="cert-status-pill done">Active</div>
+          <div class="cert-logo">THM</div>
+          <h4>TryHackMe Learning Paths</h4>
+          <p>Pre Security & Beginner paths completed, covering fundamental security topics in hands-on environments.</p>
+        </div>
+
+        <div class="cert-card completed">
+          <div class="cert-status-pill done">Active</div>
+          <div class="cert-logo">FCC</div>
+          <h4>FreeCodeCamp</h4>
+          <p>Programming & Web Fundamentals covering HTML, CSS, JavaScript basics, and algorithmic thinking.</p>
+        </div>
+
+      </div>
     </div>
   </section>
+
 
   <!-- ===== CONTACT ===== -->
   <section class="section" id="contact">
     <div class="container">
-    <div class="section-box">
-      <h3>Contact</h3>
-      <p>
-  Open to internships, learning opportunities, and entry-level roles where
-  I can continue developing practical cybersecurity and IT skills.
-</p>
+      <div class="contact-wrapper">
+        <div class="blob blob-3"></div>
 
+        <div class="section-header">
+          <span class="section-tag">05 — Contact</span>
+          <h2>Let's Connect</h2>
+        </div>
 
-     <div class="contact-icons">
-  <!-- Email -->
-  <a
-    href="mailto:Razakhan07@proton.me"
-    class="contact-btn"
-    aria-label="Email Razakhan"
-    title="Email"
-  >
-    <!-- Mail Icon -->
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6h16l-8 5zm8 7V8l-8 5-8-5v10h16z"/>
-    </svg>
-    <span>Email</span>
-  </a>
+        <p class="contact-desc">
+          Open to internships, learning opportunities, and entry-level roles where
+          I can continue developing practical cybersecurity and IT skills.
+        </p>
 
-  <!-- GitHub -->
-  <a
-    href="https://github.com/Razakhan-sec"
-    target="_blank"
-    rel="noopener"
-    class="contact-btn"
-    aria-label="Razakhan GitHub"
-    title="GitHub"
-  >
-    <!-- GitHub Icon -->
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.48v-1.69c-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.2 9.2 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.95-2.35 4.81-4.58 5.07.36.32.68.94.68 1.9v2.82c0 .26.18.58.69.48A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/>
-    </svg>
-    <span>GitHub</span>
-  </a>
-</div>
+        <div class="contact-cards">
+          <a href="mailto:Razakhan07@proton.me" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">Razakhan07@proton.me</span>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
 
+          <a href="https://github.com/Razakhan-sec" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.48v-1.69c-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.2 9.2 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.95-2.35 4.81-4.58 5.07.36.32.68.94.68 1.9v2.82c0 .26.18.58.69.48A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/Razakhan-sec</span>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
 
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© 2026 Razakhan. All rights reserved.</p>
 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>RK<span class="logo-bracket">]</span>
+      </div>
+      <p>© 2026 Razakhan. Built with purpose.</p>
+      <div class="footer-links">
+        <a href="mailto:Razakhan07@proton.me">Email</a>
+        <a href="https://github.com/Razakhan-sec" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
